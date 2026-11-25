@@ -11,7 +11,9 @@
 		"lint": "biome lint .",
 		"format": "biome format --write .",
 		"biome": "biome check --write .",
-		"prepare": "lefthook install"
+		"prepare": "lefthook install",
+		"test": "vitest run",
+		"test:watch": "vitest"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.6.9",
@@ -24,6 +26,7 @@
 		"svelte": "^5.57.3",
 		"svelte-check": "^4.7.7",
 		"typescript": "~6.0.3",
-		"vite": "^8.3.6"
+		"vite": "^8.3.6",
+		"vitest": "^5.1.1"
 	}
 }
