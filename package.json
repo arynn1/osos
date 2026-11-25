@@ -1,21 +1,29 @@
 {
-  "name": "os-scheduling-algorithms",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
-  },
-  "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^7.3.1",
-    "@tsconfig/svelte": "^5.0.8",
-    "@types/node": "^24.19.2",
-    "svelte": "^5.57.3",
-    "svelte-check": "^4.7.7",
-    "typescript": "~6.0.3",
-    "vite": "^8.3.6"
-  }
+	"name": "os-scheduling-algorithms",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json",
+		"lint": "biome lint .",
+		"format": "biome format --write .",
+		"biome": "biome check --write .",
+		"prepare": "lefthook install"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.6.9",
+		"@commitlint/cli": "^21.2.4",
+		"@commitlint/config-conventional": "^21.2.4",
+		"@sveltejs/vite-plugin-svelte": "^7.3.1",
+		"@tsconfig/svelte": "^5.0.8",
+		"@types/node": "^24.19.2",
+		"lefthook": "^2.2.2",
+		"svelte": "^5.57.3",
+		"svelte-check": "^4.7.7",
+		"typescript": "~6.0.3",
+		"vite": "^8.3.6"
+	}
 }
